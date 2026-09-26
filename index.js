@@ -15,7 +15,7 @@ const client = new Client({
 });
 
 // IMPORTANT: Înlocuiește PUNE_TOKEN_AICI cu token-ul real al botului tău!
-const BOT_TOKEN = 'MTU1MzQyMDE0MTA0NjI2Nzk3NQ.GuvO6h.xb1e3rb0_zIJ-GPd0Z9-GNuKN4RrhowPTfspss';
+const BOT_TOKEN = client.login(process.env.BOT_TOKEN);
 
 client.once('ready', () => {
     console.log(`✅ Botul Nova Social este online ca: ${client.user.tag}`);
